@@ -1,0 +1,35 @@
+-
+    const links = [
+        {
+            href: "https://vitejs.dev",
+            imgSrc: "/src/assets/svg/vite.svg",
+            imgAlt: "Vite logo"
+        },
+        {
+            href: 'https://www.typescriptlang.org',
+            imgSrc: '/src/assets/svg/typescript.svg',
+            imgAlt: 'TypeScript logo'
+        },
+        {
+            href: 'https://sass-lang.com/',
+            imgSrc: '/src/assets/svg/sass.svg',
+            imgAlt: 'SASS logo'
+        },
+        {
+            href: 'https://pugjs.org/',
+            imgSrc: '/src/assets/svg/pug.svg',
+            imgAlt: 'PUG logo'
+        },
+    ];
+
+div#app
+    each link in links
+        a(href=link.href target="_blank")
+            img(src=link.imgSrc class="logo" alt=link.imgAlt)
+
+    h1 Vite + TypeScript + SASS + PUG
+
+    div.card
+        button#counter(type="button")
+
+    p.read-the-docs Click on the logos to learn more
